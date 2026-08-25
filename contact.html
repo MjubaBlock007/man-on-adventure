@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Man on Adventure Safaris</title>
+    <meta name="description" content="Contact Man on Adventure Safaris for your Tanzania safari booking. Located in Arusha, Tanzania.">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Man on Adventure Safaris</h2>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="safaris.html" class="nav-link">Safaris</a>
+                <a href="index.html#gallery" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh;">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Contact <span class="text-gold">Man on Adventure Safaris</span></h1>
+            <p class="hero-subtitle">Start your Tanzania safari adventure with us</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We're here to help plan your perfect African adventure</p>
+            
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-building"></i>
+                    <span>Man on Adventure Safaris</span>
+                    <small>P.O. BOX 1386, Arusha, Tanzania</small>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Us</span>
+                    <small>+255 743 749 461</small>
+                </div>
+                <div class="highlight-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                    <small>+255 743 749 461</small>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                    <small>manonadventuresafaris@gmail.com</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <form class="booking-form" action="mailto:manonadventuresafaris@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="safari">Interested Safari</label>
+                                <select id="safari" name="safari">
+                                    <option value="">Select Safari Package</option>
+                                    <option value="serengeti">Serengeti Safari</option>
+                                    <option value="ngorongoro">Ngorongoro Crater</option>
+                                    <option value="tarangire">Tarangire National Park</option>
+                                    <option value="kilimanjaro">Mount Kilimanjaro</option>
+                                    <option value="zanzibar">Zanzibar Beach Safari</option>
+                                    <option value="custom">Custom Safari</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Travel Date</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="duration">Duration</label>
+                                <select id="duration" name="duration">
+                                    <option value="">Select Duration</option>
+                                    <option value="1-3">1-3 Days</option>
+                                    <option value="4-7">4-7 Days</option>
+                                    <option value="8-14">8-14 Days</option>
+                                    <option value="15+">15+ Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream safari..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div style="margin-top: var(--spacing-lg); text-align: center;">
+                        <a href="https://wa.me/+255743749461" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127449.70342141675!2d36.594810599965456!3d-3.3981402438933714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c88f2387383%3A0xbc1907f7ec497152!2sArusha!5e0!3m2!1sen!2stz!4v1773572967919!5m2!1sen!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="safaris.html">Safari Packages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: Popular Destinations -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Popular Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="safaris.html#serengeti">Serengeti</a></li>
+                        <li><a href="safaris.html#ngorongoro">Ngorongoro Crater</a></li>
+                        <li><a href="safaris.html#tarangire">Tarangire</a></li>
+                        <li><a href="safaris.html#kilimanjaro">Mount Kilimanjaro</a></li>
+                        <li><a href="safaris.html#zanzibar">Zanzibar</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Need Help -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Need Help</h4>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</p>
+                        <p><i class="fas fa-phone"></i> +255 743 749 461</p>
+                        <p><i class="fab fa-whatsapp"></i> +255 743 749 461</p>
+                        <p><i class="fas fa-envelope"></i> manonadventuresafaris@gmail.com</p>
+                    </div>
+                </div>
+                
+                <!-- Column 4: Language & Reviews -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Languages</h4>
+                    <div class="footer-language">
+                        <label>Choose Language:</label>
+                        <select class="language-dropdown">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                            <option>German</option>
+                            <option>Italian</option>
+                            <option>Chinese</option>
+                        </select>
+                    </div>
+                    
+                    <div class="footer-reviews">
+                        <h4 class="reviews-title">Customer Reviews</h4>
+                        <div class="trustpilot-placeholder">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>4.9/5 based on 250+ reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>&copy; 2026 Man on Adventure Safaris | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

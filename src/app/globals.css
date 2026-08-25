@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Brand tokens */
+:root {
+  --background: #0f1115; /* charcoal */
+  --foreground: #e9e7e2; /* sand tint for high-contrast text */
+  --accent: #ff7a45;     /* sunset */
+  --muted: #a3ad9c;      /* olive-muted */
+  --card: rgba(255,255,255,0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(255,122,69,0.12) 0%, rgba(15,17,21,0) 60%),
+              radial-gradient(800px 400px at 80% 30%, rgba(107,143,113,0.14) 0%, rgba(15,17,21,0) 60%),
+              var(--background);
+  color: var(--foreground);
+}
+
+/* Glass card util */
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* Subtle focus ring */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Button ripple */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,122,69,0.25), transparent 40%);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.ripple:active::after { opacity: 1; }
+
+/* Scroll indicator keyframes */
+@keyframes scroll-indicator { 0% { opacity: 0; transform: translateY(0) } 30% { opacity: 1 } 100% { opacity: 0; transform: translateY(10px) } }
+.animate-scroll-indicator { animation: scroll-indicator 1.8s ease-in-out infinite }
