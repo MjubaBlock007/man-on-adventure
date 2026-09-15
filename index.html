@@ -485,128 +485,188 @@
             z-index: -1;
         }
 
-        /* ========== PACKAGES ========== */
-        .packages { background: var(--white); }
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 28px;
-        }
-        .package-card {
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid var(--cream-dark);
-            transition: box-shadow var(--transition), transform var(--transition);
-            background: var(--white);
-        }
-        .package-card:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-6px);
-        }
-        .package-image {
-            position: relative;
-            height: 220px;
-            overflow: hidden;
-        }
-        .package-image img {
-            transition: transform 0.5s ease;
-        }
-        .package-card:hover .package-image img { transform: scale(1.06); }
-        .package-duration {
-            position: absolute;
-            top: 16px; right: 16px;
-            background: var(--gold);
-            color: var(--earth);
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            padding: 5px 12px;
-            border-radius: 20px;
-        }
-        .package-content { padding: 24px; }
-        .package-content h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--earth);
-            margin-bottom: 10px;
-        }
-        .package-content p {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            line-height: 1.7;
-            margin-bottom: 18px;
-        }
-        .package-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-        .package-features li {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 12px;
-            color: var(--text-mid);
-            background: var(--cream);
-            padding: 5px 10px;
-            border-radius: 20px;
-        }
-        .package-features li i { color: var(--sage); font-size: 10px; }
-        .package-footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 16px;
-            border-top: 1px solid var(--cream-dark);
-        }
-        .package-price {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--earth);
-        }
-        .package-price span {
-            font-size: 0.75rem;
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 400;
-            color: var(--text-light);
-        }
-        .book-btn {
-            background: var(--earth);
-            color: var(--cream);
-            border: none;
-            padding: 10px 20px;
-            font-size: 12px;
-            font-weight: 500;
-            letter-spacing: 0.08em;
-            font-family: 'DM Sans', sans-serif;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background var(--transition);
-        }
-        .book-btn:hover { background: var(--gold-dark); }
+          /* ========== PACKAGES ========== */
 
-        /* ========== GALLERY ========== */
-        .gallery { background: var(--cream); }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 240px 240px;
-            gap: 6px;
-        }
-        .gallery-item {
-            overflow: hidden;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-        .gallery-item img {
-            transition: transform 0.5s ease;
-            height: 100%;
-        }
-        .gallery-item:hover img { transform: scale(1.06); }
+          /* ========== MWANZO ========== */
+
+          
+.packages { background: var(--white); }
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+@media (max-width: 992px) {
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 640px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.package-card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--cream-dark);
+    transition: box-shadow var(--transition), transform var(--transition);
+    background: var(--white);
+}
+.package-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+}
+.package-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+.package-image img {
+    transition: transform 0.5s ease;
+}
+.package-card:hover .package-image img { transform: scale(1.06); }
+.package-duration {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: var(--gold);
+    color: var(--earth);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+.package-content { padding: 24px; }
+.package-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--earth);
+    margin-bottom: 10px;
+}
+.package-content p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+.package-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.package-features li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-mid);
+    background: var(--cream);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.package-features li i { color: var(--sage); font-size: 10px; }
+.package-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid var(--cream-dark);
+}
+.package-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--earth);
+}
+.package-price span {
+    font-size: 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: var(--text-light);
+}
+.book-btn {
+    background: var(--earth);
+    color: var(--cream);
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background var(--transition);
+}
+.book-btn:hover { background: var(--gold-dark); }
+
+/* ========== MWISHO WA PACKAGES,,, ZA KWANGU ALAFU ZAMOTO SANA ========== */
+
+
+/* ========== GALLERY YA MCHONGO INAANZIA HAPA BABAAAA ========== */
+
+/* ========== GALLERY ========== */
+.gallery { background: var(--cream); }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 160px;
+    gap: 6px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img { transform: scale(1.06); }
+
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(14),
+.gallery-item:nth-child(27),
+.gallery-item:nth-child(40) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-item:nth-child(8),
+.gallery-item:nth-child(21),
+.gallery-item:nth-child(34) {
+    grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+    .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 130px;
+    }
+}
+
+/* ========== GALLERY YA MCHONGO INAISHIA HAPA BABAA ========== */
 
         /* ========== LIGHTBOX ========== */
         .lightbox {
@@ -1125,133 +1185,512 @@
     </section>
 
     <!-- ===== PACKAGES ===== -->
-    <section id="packages" class="packages">
-        <div class="container">
-            <div class="section-header centered reveal">
-                <span class="section-label">Our Safaris</span>
-                <h2 class="section-title">Safari Packages</h2>
-                <p class="section-subtitle">Choose your perfect African adventure</p>
-            </div>
-            <div class="packages-grid">
-                <article class="package-card reveal">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80" alt="Serengeti Safari – wildebeest migration" loading="lazy">
-                        <div class="package-duration">5–7 Days</div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Serengeti Safari</h3>
-                        <p>Witness the Great Migration and explore Africa's most famous national park. Experience the Big Five in their natural habitat.</p>
-                        <ul class="package-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Great Migration viewing</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Big Five tracking</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Luxury accommodation</li>
-                        </ul>
-                        <div class="package-footer">
-                            <div class="package-price">$2,499 <span>per person</span></div>
-                            <button class="book-btn" onclick="prefillPackage('Serengeti Safari')">Book Now</button>
-                        </div>
-                    </div>
-                </article>
 
-                <article class="package-card reveal">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=700&q=80" alt="Ngorongoro Crater – wildlife paradise" loading="lazy">
-                        <div class="package-duration">3–4 Days</div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Ngorongoro Crater</h3>
-                        <p>Descend into the world's largest unbroken caldera and discover a paradise of wildlife concentrated in this natural wonder.</p>
-                        <ul class="package-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Crater floor safari</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Rhino tracking</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Cultural visits</li>
-                        </ul>
-                        <div class="package-footer">
-                            <div class="package-price">$1,899 <span>per person</span></div>
-                            <button class="book-btn" onclick="prefillPackage('Ngorongoro Crater')">Book Now</button>
-                        </div>
-                    </div>
-                </article>
+    <!-- ===== HTML ZA KIKUDA ZA PACKAGES C NDO  HZI, ALAFU  KAA NAZO RADAR ===== -->
 
-                <article class="package-card reveal">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1518463966984-44e5257b0d69?auto=format&fit=crop&w=700&q=80" alt="Tarangire National Park – elephants and baobabs" loading="lazy">
-                        <div class="package-duration">2–3 Days</div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Tarangire National Park</h3>
-                        <p>Famous for its large elephant herds and spectacular baobab trees. A hidden gem offering authentic safari experiences.</p>
-                        <ul class="package-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Elephant herds</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Baobab forests</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Walking safaris</li>
-                        </ul>
-                        <div class="package-footer">
-                            <div class="package-price">$1,299 <span>per person</span></div>
-                            <button class="book-btn" onclick="prefillPackage('Tarangire National Park')">Book Now</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="package-card reveal">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=700&q=80" alt="Mount Kilimanjaro – Roof of Africa" loading="lazy">
-                        <div class="package-duration">7–9 Days</div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Kilimanjaro Climb</h3>
-                        <p>Conquer Africa's highest peak. Our expert guides ensure your safety and success on this life-changing journey to the Roof of Africa.</p>
-                        <ul class="package-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Expert mountain guides</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> All equipment provided</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Acclimatisation support</li>
-                        </ul>
-                        <div class="package-footer">
-                            <div class="package-price">$3,999 <span>per person</span></div>
-                            <button class="book-btn" onclick="prefillPackage('Kilimanjaro Climb')">Book Now</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
+<section id="packages" class="packages">
+    <div class="container">
+        <div class="section-header centered reveal">
+            <span class="section-label">Our Safaris</span>
+            <h2 class="section-title">Safari Packages</h2>
+            <p class="section-subtitle">Choose your perfect African adventure</p>
         </div>
-    </section>
+        <div class="packages-grid">
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/SIMBA WA MANYARA .jpg" alt="Tarangire and Arusha National Park Safari" loading="lazy">
+        <div class="package-duration">2 Days / 1 Night</div>
+    </div>
+    <div class="package-content">
+        <h3>Tarangire & Arusha Quick Safari</h3>
+        <p>Kick off your safari in style — a guided walking safari through Arusha National Park, birdwatching over Momella Lakes, and an evening surrounded by Tarangire's giant elephant herds. Short in length, huge on memories.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Walking safari</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Momella Lakes birding</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Elephant herds</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$450–$650 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Tarangire & Arusha Quick Safari')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/lake manyara.jpg" alt="Tarangire and Lake Manyara Safari" loading="lazy">
+        <div class="package-duration">2 Days / 1 Night</div>
+    </div>
+    <div class="package-content">
+        <h3>Tarangire & Lake Manyara Safari</h3>
+        <p>Short on time but want it all? Stand beneath Africa's biggest baobabs among Tarangire's elephants, then head to Lake Manyara for its famous tree-climbing lions and flamingo-lined shores.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Giant baobabs</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Tree-climbing lions</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Flamingo lake</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$480–$680 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Tarangire & Lake Manyara Safari')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/ngorongoro jah.webp" alt="Ngorongoro and Tarangire Express Safari" loading="lazy">
+        <div class="package-duration">3 Days / 2 Nights</div>
+    </div>
+    <div class="package-content">
+        <h3>Ngorongoro & Tarangire Express</h3>
+        <p>Descend into one of the world's true wonders — the Ngorongoro Crater — where all of the Big Five can appear in a single day. Paired with Tarangire's plains for a rich three-day circuit.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Crater floor safari</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Big Five chances</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Full board lodge</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$850–$1,150 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Ngorongoro & Tarangire Express')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=700&q=80" alt="Serengeti and Ngorongoro Highlights Safari" loading="lazy">
+        <div class="package-duration">4 Days / 3 Nights</div>
+    </div>
+    <div class="package-content">
+        <h3>Serengeti & Ngorongoro Highlights</h3>
+        <p>Step into endless plains where lions, cheetahs and the Great Migration roam free, then finish with a full crater tour in Ngorongoro. This is Tanzania at its finest, in four unforgettable days.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Serengeti big cats</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Great Migration zone</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Crater tour</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$1,250–$1,650 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Serengeti & Ngorongoro Highlights')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/BIG FIVE WENYEWE.jpg" alt="Big Five Signature Safari Tanzania" loading="lazy">
+        <div class="package-duration">5 Days / 4 Nights</div>
+    </div>
+    <div class="package-content">
+        <h3>"Big Five" Signature Safari</h3>
+        <p>Our complete northern circuit — Manyara, Serengeti, Ngorongoro and Tarangire together. Maximum chances to spot lion, leopard, elephant, rhino and buffalo, plus cultural stops along the way.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> All 4 northern parks</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Big Five focus</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Cultural stops</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$1,600–$2,100 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Big Five Signature Safari')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Ultimate Northern Circuit & Kilimanjaro Day Trip.webp" alt="Ultimate Northern Circuit and Kilimanjaro Day Safari" loading="lazy">
+        <div class="package-duration">7 Days / 6 Nights</div>
+    </div>
+    <div class="package-content">
+        <h3>Ultimate Northern Circuit & Kilimanjaro Day Trip</h3>
+        <p>A full week through every major northern park, capped with a day trip to Moshi for sweeping views of Mount Kilimanjaro. For travelers who want to see it all — this is it.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Multi-park circuit</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Kilimanjaro views</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Airport drop-off</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$2,200–$2,800 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Ultimate Northern Circuit & Kilimanjaro Day Trip')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Mount Meru Summit Trek.jpg" alt="Mount Meru Summit Trek Tanzania" loading="lazy">
+        <div class="package-duration">3–4 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Mount Meru Summit Trek</h3>
+        <p>Climb Tanzania's second-highest peak through quiet forest trails where giraffe, buffalo and colobus monkeys roam below the crater rim — a rewarding trek in its own right.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Wildlife on lower trails</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Hut accommodation</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Crater rim views</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$680 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Mount Meru Summit Trek')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Usambara Highlands Hike.webp" alt="Usambara Highlands Hike Tanzania" loading="lazy">
+        <div class="package-duration">2–3 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Usambara Highlands Hike</h3>
+        <p>A gentler cultural trek through cloud forests, waterfalls and Sambaa villages — perfect for travelers who want scenery and culture without chasing a summit.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Cloud forest trails</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Village culture</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Waterfall stops</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">$420 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Usambara Highlands Hike')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Northern Parks Safari Extension.jpg" alt="Northern Parks Safari Extension" loading="lazy">
+        <div class="package-duration">4 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Northern Parks Safari Extension</h3>
+        <p>A quick, complete safari on a friendly budget — big elephant herds in Tarangire, then down into Ngorongoro Crater. Perfect as a fast add-on to any Tanzania trip.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Budget-friendly</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Elephant herds</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Crater visit</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $793 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Northern Parks Safari Extension')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Small Group Safari.avif" alt="Tanzania Small Group Safari" loading="lazy">
+        <div class="package-duration">5 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Small Group Safari</h3>
+        <p>Share the adventure and the cost — travel with 3 to 6 fellow guests per jeep through Tarangire, Serengeti and Ngorongoro, without giving up an inch of the experience.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Shared jeep, lower cost</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Big Five viewing</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Solo & couple friendly</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $1,570 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Small Group Safari')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Tanzania Safari Classic.webp" alt="Tanzania Safari Classic" loading="lazy">
+        <div class="package-duration">7 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Tanzania Safari Classic</h3>
+        <p>A perfectly balanced week for first-time safari-goers — Arusha, Lake Manyara, the heart of the Serengeti, and the World Heritage-listed Ngorongoro Crater.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> First-timer friendly</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Central Serengeti</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> World Heritage crater</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $1,599 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Tanzania Safari Classic')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/HOLY HOLIDAY.jpg" alt="Tanzania Wildlife Holiday" loading="lazy">
+        <div class="package-duration">8 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Tanzania Wildlife Holiday</h3>
+        <p>Built for pure wildlife lovers — generous time in Serengeti and Tarangire plus Ngorongoro Crater, with nothing rushed and nothing missed.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> In-depth game drives</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Migration chances</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Unhurried pace</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $1,957 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Tanzania Wildlife Holiday')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/great-_migration__tanzania_river_crossing.webp" alt="Great Migration and Mara River Crossing Safari" loading="lazy">
+        <div class="package-duration">9 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Great Migration & Mara River Crossing</h3>
+        <p>Witness one of nature's most dramatic spectacles — millions of wildebeest crossing the Mara River. Precisely timed to your travel season for the best chance to see it live.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Mara River crossings</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Northern & Central Serengeti</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Big Five encounters</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $2,365 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Great Migration & Mara River Crossing')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Safari & Zanzibar Beach Holiday.jpg" alt="Safari and Zanzibar Beach Holiday" loading="lazy">
+        <div class="package-duration">11 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Safari & Zanzibar Beach Holiday</h3>
+        <p>The best of both worlds — thrilling Big Five game drives on the mainland followed by six full days unwinding on Zanzibar's white-sand beaches.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Big Five safari</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> 6 days in Zanzibar</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Adventure + relaxation</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $2,173 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Safari & Zanzibar Beach Holiday')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/HONEYMOON.webp" alt="Honeymoon Safari and Zanzibar Escape" loading="lazy">
+        <div class="package-duration">12 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Honeymoon Safari & Zanzibar Escape</h3>
+        <p>Designed for couples — private, romantic luxury lodges, front-row seats to the Great Migration, and six dreamy days on Zanzibar's shores. Privacy and romance in every detail.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Private luxury lodges</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Great Migration</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Romantic Zanzibar stay</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $2,500 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Honeymoon Safari & Zanzibar Escape')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+<article class="package-card reveal">
+    <div class="package-image">
+        <img src="/images/Ultimate Safari & Zanzibar Paradise.webp" alt="Ultimate Safari and Zanzibar Paradise" loading="lazy">
+        <div class="package-duration">15 Days</div>
+    </div>
+    <div class="package-content">
+        <h3>Ultimate Safari & Zanzibar Paradise</h3>
+        <p>Our most complete journey — a full, unhurried exploration of the northern circuit followed by an entire week of Zanzibar paradise. For travelers who won't rush Africa.</p>
+        <ul class="package-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Full northern circuit</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> 6 days in Zanzibar</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Unhurried 2-week trip</li>
+        </ul>
+        <div class="package-footer">
+            <div class="package-price">From $2,988 <span>per person</span></div>
+            <button class="book-btn" onclick="prefillPackage('Ultimate Safari & Zanzibar Paradise')">Book Now</button>
+        </div>
+    </div>
+</article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== MWANZO  WA GALLERY,  LAZIMA USEME ===== -->
 
     <!-- ===== GALLERY ===== -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header centered reveal">
-                <span class="section-label">Wildlife Gallery</span>
-                <h2 class="section-title">Africa's Magnificent Wildlife</h2>
-                <p class="section-subtitle">Glimpses of the animals you'll encounter on your safari</p>
+<section id="gallery" class="gallery">
+    <div class="container">
+        <div class="section-header centered reveal">
+            <span class="section-label">Wildlife Gallery</span>
+            <h2 class="section-title">Africa's Magnificent Wildlife</h2>
+            <p class="section-subtitle">Glimpses of the animals and landscapes you'll encounter across East Africa</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View lion resting in the serengeti photo">
+                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=600&q=80" alt="Lion resting in the Serengeti" loading="lazy">
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View lion photo">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80" alt="Lion resting in the Serengeti" loading="lazy">
-                </div>
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View elephant photo">
-                    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef4?auto=format&fit=crop&w=500&q=80" alt="Elephant herd" loading="lazy">
-                </div>
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View leopard photo">
-                    <img src="https://images.unsplash.com/photo-1549417309-85bb3092e319?auto=format&fit=crop&w=500&q=80" alt="Leopard in a tree" loading="lazy">
-                </div>
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View rhino photo">
-                    <img src="https://images.unsplash.com/photo-1590417825852-3e0b6443ea2e?auto=format&fit=crop&w=500&q=80" alt="Black rhino" loading="lazy">
-                </div>
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View buffalo photo">
-                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=500&q=80" alt="Cape buffalo" loading="lazy">
-                </div>
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View giraffe photo">
-                    <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?auto=format&fit=crop&w=500&q=80" alt="Giraffe against a sunset sky" loading="lazy">
-                </div>
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View zebra photo">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=500&q=80" alt="Zebra herd on the savanna" loading="lazy">
-                </div>
-                <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View hippo photo">
-                    <img src="https://images.unsplash.com/photo-1540328156514-7e5857280512?auto=format&fit=crop&w=500&q=80" alt="Hippo in river" loading="lazy">
-                </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View elephant herd crossing the savanna photo">
+                <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef4?auto=format&fit=crop&w=600&q=80" alt="Elephant herd crossing the savanna" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View leopard resting in a tree photo">
+                <img src="https://images.unsplash.com/photo-1549417309-85bb3092e319?auto=format&fit=crop&w=600&q=80" alt="Leopard resting in a tree" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View black rhino grazing photo">
+                <img src="https://images.unsplash.com/photo-1590417825852-3e0b6443ea2e?auto=format&fit=crop&w=600&q=80" alt="Black rhino grazing" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View cape buffalo in the grasslands photo">
+                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80" alt="Cape buffalo in the grasslands" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View giraffe against a sunset sky photo">
+                <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?auto=format&fit=crop&w=600&q=80" alt="Giraffe against a sunset sky" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View zebra herd on the savanna photo">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=600&q=80" alt="Zebra herd on the savanna" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View hippo submerged in a river photo">
+                <img src="https://images.unsplash.com/photo-1540328156514-7e5857280512?auto=format&fit=crop&w=600&q=80" alt="Hippo submerged in a river" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View cheetah scanning the plains photo">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80" alt="Cheetah scanning the plains" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View wildebeest herd on the move photo">
+                <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=600&q=80" alt="Wildebeest herd on the move" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View elephant family at a watering hole photo">
+                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=600&q=80" alt="Elephant family at a watering hole" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View lions in golden grass photo">
+                <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=600&q=80" alt="Lions in golden grass" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View safari jeep on a game drive photo">
+                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" alt="Safari jeep on a game drive" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View acacia tree at sunset photo">
+                <img src="https://images.unsplash.com/photo-1621855888905-a8bb2a53f0e7?auto=format&fit=crop&w=600&q=80" alt="Acacia tree at sunset" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View mount kilimanjaro at dawn photo">
+                <img src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=600&q=80" alt="Mount Kilimanjaro at dawn" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View zanzibar turquoise beach photo">
+                <img src="https://images.unsplash.com/photo-1580060839134-75a50c65e5cc?auto=format&fit=crop&w=600&q=80" alt="Zanzibar turquoise beach" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View snow-capped kilimanjaro summit photo">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=80" alt="Snow-capped Kilimanjaro summit" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View ngorongoro crater landscape photo">
+                <img src="https://images.unsplash.com/photo-1573160103600-1c6a68a1a1ef?auto=format&fit=crop&w=600&q=80" alt="Ngorongoro Crater landscape" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View baobab tree at sunset photo">
+                <img src="https://images.unsplash.com/photo-1518463966984-44e5257b0d69?auto=format&fit=crop&w=600&q=80" alt="Baobab tree at sunset" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View highland trekking trail photo">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Highland trekking trail" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View elephant close-up portrait photo">
+                <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=600&q=80" alt="Elephant close-up portrait" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View african savanna sunset photo">
+                <img src="https://images.unsplash.com/photo-1500723752963-6ff0d9a8dfe4?auto=format&fit=crop&w=600&q=80" alt="African savanna sunset" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View giraffe walking across the plains photo">
+                <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?auto=format&fit=crop&w=600&q=80" alt="Giraffe walking across the plains" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View lioness on the prowl photo">
+                <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=600&q=80" alt="Lioness on the prowl" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View herd of zebras grazing photo">
+                <img src="https://images.unsplash.com/photo-1470114716159-e389f8712fda?auto=format&fit=crop&w=600&q=80" alt="Herd of zebras grazing" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View flamingos on a soda lake photo">
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902861a?auto=format&fit=crop&w=600&q=80" alt="Flamingos on a soda lake" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View maasai warrior at sunset photo">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Maasai warrior at sunset" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View balloon safari over the plains photo">
+                <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=600&q=80" alt="Balloon safari over the plains" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View hot air balloons at sunrise photo">
+                <img src="https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=600&q=80" alt="Hot air balloons at sunrise" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View elephant silhouette at dusk photo">
+                <img src="https://images.unsplash.com/photo-1484406566174-9da000fda645?auto=format&fit=crop&w=600&q=80" alt="Elephant silhouette at dusk" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View savanna landscape with acacia photo">
+                <img src="https://images.unsplash.com/photo-1442458017215-285b83f65851?auto=format&fit=crop&w=600&q=80" alt="Savanna landscape with acacia" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View african sunset over the plains photo">
+                <img src="https://images.unsplash.com/photo-1526095179574-86e545346ae6?auto=format&fit=crop&w=600&q=80" alt="African sunset over the plains" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View wildlife reserve panorama photo">
+                <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=600&q=80" alt="Wildlife reserve panorama" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View giraffe pair in golden light photo">
+                <img src="https://images.unsplash.com/photo-1547471080-16b0221e7ef2?auto=format&fit=crop&w=600&q=80" alt="Giraffe pair in golden light" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View lion pride resting together photo">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80" alt="Lion pride resting together" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View elephant herd walking in a line photo">
+                <img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?auto=format&fit=crop&w=600&q=80" alt="Elephant herd walking in a line" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View rhino portrait close-up photo">
+                <img src="https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?auto=format&fit=crop&w=600&q=80" alt="Rhino portrait close-up" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View leopard camouflaged in bush photo">
+                <img src="https://images.unsplash.com/photo-1614952110495-92c1b5c1e5a5?auto=format&fit=crop&w=600&q=80" alt="Leopard camouflaged in bush" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View cheetah cubs playing photo">
+                <img src="https://images.unsplash.com/photo-1611688386212-2f0c5a5f6a3d?auto=format&fit=crop&w=600&q=80" alt="Cheetah cubs playing" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View zebra close-up pattern photo">
+                <img src="https://images.unsplash.com/photo-1618022325802-7e5ce0a56f30?auto=format&fit=crop&w=600&q=80" alt="Zebra close-up pattern" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View hippo yawning in water photo">
+                <img src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?auto=format&fit=crop&w=600&q=80" alt="Hippo yawning in water" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View antelope grazing at dusk photo">
+                <img src="https://images.unsplash.com/photo-1517255530133-1e8e2673f1a0?auto=format&fit=crop&w=600&q=80" alt="Antelope grazing at dusk" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View buffalo herd in the mist photo">
+                <img src="https://images.unsplash.com/photo-1618506469330-13a6a3dab5c0?auto=format&fit=crop&w=600&q=80" alt="Buffalo herd in the mist" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View baby elephant with mother photo">
+                <img src="https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?auto=format&fit=crop&w=600&q=80" alt="Baby elephant with mother" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View sunrise over the serengeti plains photo">
+                <img src="https://images.unsplash.com/photo-1541417904950-b855846fe1c9?auto=format&fit=crop&w=600&q=80" alt="Sunrise over the Serengeti plains" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View safari campsite at dusk photo">
+                <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=600&q=80" alt="Safari campsite at dusk" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View green rolling hills of the highlands photo">
+                <img src="https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?auto=format&fit=crop&w=600&q=80" alt="Green rolling hills of the highlands" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View coastal palm trees zanzibar photo">
+                <img src="https://images.unsplash.com/photo-1544966503-7cc531c9c11e?auto=format&fit=crop&w=600&q=80" alt="Coastal palm trees Zanzibar" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View stone town narrow alley zanzibar photo">
+                <img src="https://images.unsplash.com/photo-1584553421349-3557471bed79?auto=format&fit=crop&w=600&q=80" alt="Stone Town narrow alley Zanzibar" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View spice farm zanzibar photo">
+                <img src="https://images.unsplash.com/photo-1516815231560-8f41ec531527?auto=format&fit=crop&w=600&q=80" alt="Spice farm Zanzibar" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" role="button" tabindex="0" aria-label="View ostrich on the open plains photo">
+                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80" alt="Ostrich on the open plains" loading="lazy">
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- ===== MWISHO WA GALLERY,  LAZIMA USEME ===== -->
 
     <!-- ===== LIGHTBOX ===== -->
     <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
@@ -1515,7 +1954,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         // ===== MOBILE MENU =====
         const navToggle = document.getElementById('nav-toggle');

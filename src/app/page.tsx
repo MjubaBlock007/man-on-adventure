@@ -53,7 +53,6 @@ export default function Home() {
       {/* Featured Packages */}
       <section className="container py-10">
         <h2 className="text-3xl font-semibold mb-6" style={{fontFamily:'var(--font-display)'}}>Featured Safari Packages</h2>
-        {/* @ts-expect-error Async Server Component boundary for simplicity */}
         <FeaturedGrid />
       </section>
 
@@ -91,7 +90,6 @@ async function FeaturedGrid() {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {packages.slice(0,3).map((p)=> (
-        // @ts-expect-error dynamic import type relax
         <PackageCard key={p.slug} p={p} />
       ))}
     </div>
