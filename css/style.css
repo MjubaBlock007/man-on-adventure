@@ -102,7 +102,7 @@ body {
 
 .text-gold {
     color: var(--primary-gold);
-}
+} 
 
 /* Code za Mjuba */
 
@@ -113,7 +113,57 @@ body {
 }
 
 
+/*  hizi ndio zile CSS za PACKAGES ambazo zitakaa apa mpk niamue muafaka wake */
 
+/* Tier accent badges */
+.package-tier {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.package-tier--budget    { background: #2e8b57; }
+.package-tier--midrange  { background: #c98a1f; }
+.package-tier--luxury    { background: #8b1e3f; }
+
+/* Subtle top border color per tier for quick visual scanning */
+.package-card--budget    { border-top: 4px solid #2e8b57; }
+.package-card--midrange  { border-top: 4px solid #c98a1f; }
+.package-card--luxury    { border-top: 4px solid #8b1e3f; }
+
+/* Hover lift animation */
+.package-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+.package-card .package-image img {
+    transition: transform 0.5s ease;
+}
+.package-card:hover .package-image img {
+    transform: scale(1.06);
+}
+
+/* Scroll-reveal fade-in */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*  hizi ndio zile CSS za PACKAGES ambazo zitakaa apa mpk niamue muafaka wake */
 
 /* ===================================
    Professional Two-Tier Header

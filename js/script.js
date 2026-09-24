@@ -479,3 +479,25 @@ handleSwipe();
 // ===================================
 console.log('%c🦁 Welcome to Man on Adventure Safari! 🌍', 'font-size: 20px; font-weight: bold; color: #d4af37;');
 console.log('%cExperience the wild heart of Africa with us!', 'font-size: 14px; color: #2d5016;');
+
+
+// ===================================
+// SASA HIZI NI JAVASCRIPT CODE KWA AJILI YA PACKAGES ZA SERENGETII ONLY, PIA ZINAAMBATANA NA ZA KWNT=Y STYLE, NA HTML PIA, ZINAKAA ZOTE HAPA CHINI MPK "MWISHO WA JAVASCRIPT"
+// ===================================
+document.addEventListener("DOMContentLoaded", function () {
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    reveals.forEach(el => observer.observe(el));
+});
+
+// ===================================
+// MWISHO WA JAVASCRIPT YA SERENGETI PACKAGES
+// ===================================
